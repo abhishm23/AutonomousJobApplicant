@@ -4,7 +4,7 @@ from config import config
 
 class Database:
     def __init__(self, db_path=None, read_only=False):
-        self.db_path = db_path or config.DB_PATH
+        self.db_path = db_path or os.getenv("DB_PATH", config.DB_PATH)
         os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
         self.conn = duckdb.connect(self.db_path, read_only=read_only)
         if not read_only:
