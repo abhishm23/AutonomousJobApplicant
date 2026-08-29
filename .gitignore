@@ -7,3 +7,4 @@ data/*.duckdb.wal
 .freebuff/
 .env
 *.log
+*.dmp
