@@ -9,17 +9,17 @@ class ResumeGenerator:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{name} - Resume</title>
 <style>
-  body { font-family: 'Segoe UI', Arial, sans-serif; margin: 40px; color: #333; line-height: 1.6; max-width: 800px; }
-  h1 { color: #1a1a2e; border-bottom: 3px solid #16213e; padding-bottom: 8px; }
-  h2 { color: #16213e; margin-top: 24px; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
-  .contact { color: #555; margin-bottom: 20px; }
-  .experience { margin-bottom: 16px; }
-  .experience h3 { margin-bottom: 4px; color: #1a1a2e; }
-  .experience .meta { color: #666; font-style: italic; margin-bottom: 6px; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 4px; }
-  .skills { display: flex; flex-wrap: wrap; gap: 8px; }
-  .skill { background: #e8eaf6; padding: 4px 12px; border-radius: 12px; font-size: 0.9em; }
+  body {{ font-family: 'Segoe UI', Arial, sans-serif; margin: 40px; color: #333; line-height: 1.6; max-width: 800px; }}
+  h1 {{ color: #1a1a2e; border-bottom: 3px solid #16213e; padding-bottom: 8px; }}
+  h2 {{ color: #16213e; margin-top: 24px; border-bottom: 1px solid #ddd; padding-bottom: 4px; }}
+  .contact {{ color: #555; margin-bottom: 20px; }}
+  .experience {{ margin-bottom: 16px; }}
+  .experience h3 {{ margin-bottom: 4px; color: #1a1a2e; }}
+  .experience .meta {{ color: #666; font-style: italic; margin-bottom: 6px; }}
+  ul {{ padding-left: 20px; }}
+  li {{ margin-bottom: 4px; }}
+  .skills {{ display: flex; flex-wrap: wrap; gap: 8px; }}
+  .skill {{ background: #e8eaf6; padding: 4px 12px; border-radius: 12px; font-size: 0.9em; }}
 </style>
 </head>
 <body>
