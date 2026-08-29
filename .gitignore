@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+data/browser_user_data/
+data/*.duckdb
+data/*.duckdb.wal
+.freebuff/
+.env
+*.log
