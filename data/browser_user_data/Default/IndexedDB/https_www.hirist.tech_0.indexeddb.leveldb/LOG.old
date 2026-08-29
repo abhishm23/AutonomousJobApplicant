@@ -1,0 +1,6 @@
+2026/07/23-21:40:31.265 5bb0 Reusing MANIFEST c:\AutonomousJobApplicant\data\browser_user_data\Default\IndexedDB\https_www.hirist.tech_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/23-21:40:31.265 5bb0 Recovering log #3
+2026/07/23-21:40:31.279 5bb0 Reusing old log c:\AutonomousJobApplicant\data\browser_user_data\Default\IndexedDB\https_www.hirist.tech_0.indexeddb.leveldb/000003.log 
+2026/07/23-21:40:31.953 27f4 Level-0 table #5: started
+2026/07/23-21:40:31.991 27f4 Level-0 table #5: 1293883 bytes OK
+2026/07/23-21:40:31.997 27f4 Delete type=0 #3
