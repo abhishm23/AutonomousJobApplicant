@@ -1,10 +1,30 @@
+# Python Bytecode & Caches
 __pycache__/
-*.pyc
-*.pyo
-data/browser_user_data/
-data/*.duckdb
-data/*.duckdb.wal
-.freebuff/
-.env
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local User Data, Databases & Logs
+data/
+*.duckdb
+*.duckdb.wal
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
 *.log
 *.dmp
+
+# Environments & Secret Keys
+.env
+.env.*
+.venv/
+env/
+venv/
+
+# Antigravity & Agent Caches
+.agents/
+.freebuff/
+graphify-out/
+

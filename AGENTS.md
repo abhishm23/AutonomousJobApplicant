@@ -5,12 +5,15 @@
 - NaN from DuckDB: unevaluated `match_score` returns `float('nan')`. Never `int()` on raw score — use `math.isnan()` first.
 
 ## Scraper-Specific Pitfalls
-- **WeWorkRemotely** returns RSS/XML, not HTML. Parse with `xml.etree.ElementTree`.
+- **WeWorkRemotely & RemoteOK**: Do NOT use or scrape RemoteOK or WeWorkRemotely as they require paid subscriptions. Use Himalayas, Remotive, LinkedIn, Naukri, Hirist, and Wellfound instead.
 - **Himalayas API** uses camelCase: `companyName`, `applicationLink`, `minSalary`, `maxSalary`.
-- **LinkedIn** blocks scrapers. Avoid without Playwright.
-- **Wellfound** has minimal HTML — only `a[href*="/jobs/"]` links are reliable. Company names in `img[alt*="company logo"]`.
+- **LinkedIn, Naukri, Hirist & Wellfound**: Use persistent browser context with Playwright to preserve authenticated login cookies and avoid anti-bot blocks.
 - **Adzuna** requires API auth (403 without). Use Himalayas instead.
-- Best free sources: **RemoteOK** and **Remotive**.
+
+## Job Ingestion & Deduplication
+- **Deduplication & Primary Key**: Always track jobs by `job_id` / platform composite key. Never re-surface jobs that have already been marked as `applied`.
+- **Sorting**: Display and evaluate jobs in reverse chronological order (newest first).
+- **Fault-Tolerant Scraping**: Individual scraper failures must degrade gracefully, allowing the pipeline to proceed without terminating.
 
 ## Resume Parsing
 - PDF section headers vary wildly. Maintain a broad header list.
@@ -25,3 +28,4 @@
 - Monolithic pipeline: scrape → evaluate → tailor sequentially. Blocks UI.
 - Resume parser regex is fragile. Gemini can replace it.
 - Canonical schema: `{ personal_info, experience, skills, education, summary, certifications }`.
+

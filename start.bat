@@ -11,7 +11,7 @@ echo Press Ctrl+C to stop the server.
 echo ========================================
 echo.
 cd /d "%~dp0"
-python -m streamlit run dashboard/app.py --server.headless true --server.port 8501
+python -m streamlit run dashboard/app.py --server.headless false --server.port 8501
 if errorlevel 1 (
     echo.
     echo [ERROR] Failed to start. Make sure Python and Streamlit are installed.
